@@ -27,13 +27,13 @@
 #       "yes": yup
 #       enabled: "ON"
 
-en:
-  hello: "Hello world"
+it:
+  hello: "Ciao mondo"
   products:
     index:
-      title: "Products"
-      new: "New Product"
+      title: "Prodotti"
+      new: "Nuovo Prodotto"
     new:
-      title: "New product"
+      title: "Nuovo prodotto"
   sessions:
     new: "Login"
