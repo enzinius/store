@@ -15,7 +15,9 @@ Rails.application.routes.draw do
 
   # delete "/products/:id", to: "products#destroy"
   root "products#index"
-  resources :products
+  resources :products do
+    resources :subscribers, only: [ :create ]
+  end
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
