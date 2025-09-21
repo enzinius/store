@@ -1,3 +1,6 @@
-<h1>Good news!</h1>
+Good news!
 
-<p><%= link_to @product.name, product_url(@product) %> is back in stock.</p>
+<%= product_url(@product) %> is back in stock.
+<%= product_url(@product) %>
+
+Unsubscribe: <%= unsubscribe_url(token: params[:subscriber].generate_token_for(:unsubscribe_token)) %>
